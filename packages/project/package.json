@@ -1,0 +1,53 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "lerna+craco搭建的项目",
+  "scripts": {
+    "analyze": "pnpm run build && source-map-explorer dist/static/js/main.* --no-border-checks",
+    "build": "craco build",
+    "lint": "npm run lint:script && npm run lint:style",
+    "lint:script": "eslint --fix --ext .js,.jsx,.ts,.tsx src",
+    "lint:style": "stylelint --fix \"**/*.less\" --custom-syntax postcss-less",
+    "remove": "yalc remove -all",
+    "sort": "sort-package-json",
+    "start": "craco start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@antv/g6": "^4.6.4",
+    "ahooks": "^3.1.10",
+    "antd": "4.19.1",
+    "axios": "^0.26.1",
+    "classnames": "^2.3.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
+    "monaco-editor": "^0.33.0",
+    "normalize.css": "^8.0.1",
+    "query-string": "^7.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-monaco-editor": "^0.48.0",
+    "react-router-dom": "5.3.0",
+    "react-sortable-hoc": "^2.0.0"
+  },
+  "devDependencies": {
+    "@craco/craco": "^6.4.3",
+    "react-scripts": "^5.0.0",
+    "source-map-explorer": "^2.5.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

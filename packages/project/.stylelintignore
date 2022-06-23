@@ -1,0 +1,9 @@
+node_modules/**/*.css
+node_modules/**/*.less
+node_modules/**/*.scss
+
+**/*/public/**/*.css
+**/*/public/**/*.less
+**/*/public/**/*.scss
+
+**/*/dist
